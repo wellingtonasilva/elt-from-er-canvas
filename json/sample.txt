@@ -1,0 +1,62 @@
+table Customer {
+  "tablename": "Customer",
+  "description": "Customer",
+  "fields": [
+    {
+      "fieldname": "ID",
+      "description": "Table ID",
+      "caption": "ID",
+      "type": "string"
+    },
+    {
+      "fieldname": "NAME",
+      "description": "Name",
+      "caption": "Name",
+      "type": "string"
+    },
+    {
+      "fieldname": "ADDRESS",
+      "description": "Address",
+      "caption": "Address",
+      "type": "string"
+    }
+  ]
+};
+
+table CustomerTelephone {
+  "tablename": "CustomerTelephone",
+  "description": "Telephone",
+  "fields": [
+    {
+      "fieldname": "ID",
+      "description": "Table ID",
+      "caption": "ID",
+      "type": "number"
+    },
+    {
+      "fieldname": "PHONENUMBER",
+      "description": "Phone Number",
+      "caption": "Phone Number",
+      "type": "string"
+    }
+  ]
+};
+
+table CustomerEmail {
+  "tablename": "CustomerEmail",
+  "description": "Email",
+  "fields": [
+    {
+      "fieldname": "ID",
+      "description": "Table ID",
+      "caption": "ID",
+      "type": "number"
+    },
+    {
+      "fieldname": "EMAIL",
+      "description": "E-mail",
+      "caption": "E-mail",
+      "type": "string"
+    }
+  ]
+};

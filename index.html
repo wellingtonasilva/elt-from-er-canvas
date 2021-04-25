@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Canvas tutorial</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <style type="text/css">
+      canvas {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body onload="draw();">
+    <div>
+      <div class="left">
+        <textarea id="definition"></textarea>
+      </div>
+      <div class="right">
+        <canvas id="tutorial" width="800" height="400"></canvas>
+      </div>
+    </div>
+
+    <div>
+      <button id="btn-create">Create</button>
+      <button id="btn-read-definition">Read Text</button>
+    </div>
+  </body>
+  <script src="js/main.js"></script>
+</html>

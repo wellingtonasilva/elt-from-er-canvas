@@ -1,0 +1,19 @@
+.left {
+  float: left;
+  width: 50%;
+  height: 90%;
+}
+
+.right {
+  float: right;
+  width: 50%;
+  height: 90%;
+  align-items: center;
+}
+
+textarea {
+  height: 95%;
+  width: 95%;
+  margin: 5px;
+  font-family: "Courier New", Courier, monospace;
+}
