@@ -4,9 +4,6 @@ var tables = [];
 
 window.onload = function () {
   document
-    .getElementById("btn-create")
-    .addEventListener("click", onCreateClick);
-  document
     .getElementById("btn-read-definition")
     .addEventListener("click", readDefinition);
   initDraw();
@@ -17,32 +14,6 @@ function initDraw() {
   if (canvas.getContext) {
     ctx = canvas.getContext("2d");
   }
-}
-
-function onCreateClick() {
-  let x = 40;
-  let y = 65;
-  //Name
-  ctx.fillStyle = "rgba(0, 80, 50, 0.30)";
-  ctx.fillRect(30, 50, 300, 30);
-  //Attributes
-  ctx.fillStyle = "rgba(0, 80, 50, 0.10)";
-  ctx.fillRect(30, 80, 300, 200);
-
-  ctx.font = "12px Courier";
-  ctx.fillStyle = "#ffffff";
-  ctx.textAlign = "start";
-  ctx.textBaseline = "middle";
-  ctx.fillText("Customer", x, y);
-
-  y += 30;
-  drawText("ID", x, y, "#000000");
-  y += 25;
-  drawText("Description", x, y, "#000000");
-  y += 25;
-  drawText("Telephone", x, y, "#000000");
-  y += 25;
-  drawText("Address", x, y, "#000000");
 }
 
 function drawText(

@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Canvas tutorial</title>
+    <title>ELT with Canvas</title>
     <link rel="stylesheet" href="css/main.css" />
     <style type="text/css">
       canvas {
@@ -11,16 +11,78 @@
   <body onload="draw();">
     <div>
       <div class="left">
-        <textarea id="definition"></textarea>
+        <textarea id="definition">
+table Customer {
+  "tablename": "Customer",
+  "description": "Customer",
+  "fields": [
+    {
+      "fieldname": "ID",
+      "description": "Table ID",
+      "caption": "ID",
+      "type": "string"
+    },
+    {
+      "fieldname": "NAME",
+      "description": "Name",
+      "caption": "Name",
+      "type": "string"
+    },
+    {
+      "fieldname": "ADDRESS",
+      "description": "Address",
+      "caption": "Address",
+      "type": "string"
+    }
+  ]
+};
+
+table CustomerTelephone {
+  "tablename": "CustomerTelephone",
+  "description": "Telephone",
+  "fields": [
+    {
+      "fieldname": "ID",
+      "description": "Table ID",
+      "caption": "ID",
+      "type": "number"
+    },
+    {
+      "fieldname": "PHONENUMBER",
+      "description": "Phone Number",
+      "caption": "Phone Number",
+      "type": "string"
+    }
+  ]
+};
+
+table CustomerEmail {
+  "tablename": "CustomerEmail",
+  "description": "Email",
+  "fields": [
+    {
+      "fieldname": "ID",
+      "description": "Table ID",
+      "caption": "ID",
+      "type": "number"
+    },
+    {
+      "fieldname": "EMAIL",
+      "description": "E-mail",
+      "caption": "E-mail",
+      "type": "string"
+    }
+  ]
+};
+        </textarea>
       </div>
       <div class="right">
-        <canvas id="tutorial" width="800" height="400"></canvas>
+        <canvas id="tutorial" width="800" height="582"></canvas>
       </div>
     </div>
 
     <div>
-      <button id="btn-create">Create</button>
-      <button id="btn-read-definition">Read Text</button>
+      <button id="btn-read-definition">Create Diagram</button>
     </div>
   </body>
   <script src="js/main.js"></script>
